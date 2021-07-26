@@ -20,27 +20,12 @@ module.exports = {
       {
         test: /\.ts$/,
         exclude: /node_modules/,
-        use: 'ts-loader',
+        use: ['babel-loader', 'ts-loader'],
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              [
-                '@babel/preset-env',
-                {
-                  corejs: 3,
-                  targets: '> 1%',
-                  useBuiltIns: 'usage',
-                },
-              ],
-            ],
-            plugins: ['@babel/plugin-proposal-class-properties'],
-          },
-        },
+        use: 'babel-loader',
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
