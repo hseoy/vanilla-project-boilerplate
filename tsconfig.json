@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./backend",
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["DOM"],
+    "sourceMap": true,
+    "outDir": "./backend/dist",
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}
