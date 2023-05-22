@@ -13,7 +13,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              additionalData: '@import "./frontend/src/styles/base.scss";',
+              additionalData: '@import "./src/styles/base.scss";',
             },
           },
         ],

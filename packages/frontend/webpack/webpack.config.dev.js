@@ -13,7 +13,7 @@ module.exports = {
           {
             loader: 'sass-loader',
             options: {
-              additionalData: '@import "./frontend/src/styles/base.scss";',
+              additionalData: '@import "./src/styles/base.scss";',
             },
           },
         ],
@@ -21,7 +21,7 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.resolve(__dirname, './backend/public'),
+    contentBase: path.resolve(__dirname, './public'),
     watchContentBase: true,
     compress: true,
     hot: true,

@@ -4,3 +4,4 @@ backend/public
 dist
 .env
 yarn-error.log
+build

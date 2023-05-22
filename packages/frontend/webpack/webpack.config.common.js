@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: './frontend/src/index.ts',
+  entry: './src/index.ts',
   resolve: {
     extensions: ['.ts', '.js', '.json', '.scss'],
     alias: {
@@ -12,7 +12,7 @@ module.exports = {
     },
   },
   output: {
-    path: path.resolve('./backend/public'),
+    path: path.resolve('build'),
     filename: 'bundle.js',
   },
   module: {
@@ -40,7 +40,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './frontend/public/index.html',
+      template: './public/index.html',
     }),
     new webpack.DefinePlugin({
       'process.env.API_URI': JSON.stringify(process.env.API_URI),
